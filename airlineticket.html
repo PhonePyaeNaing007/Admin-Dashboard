@@ -1,0 +1,14 @@
+const originalPrice =100;
+const totalPrice=0;
+const memberType="silverMember";
+if (memberType==="normalMember"){
+    totalPrice +=100 *0.95;
+}else if(memberType === "silverMember"){
+    totalPrice +=100 * 0.9;
+}else if(memberType === "goldMember"){
+    totalPrice +=100 * 0.85;
+}else if(memberType === "platinumMember"){
+    totalPrice +=100 * 0.8;
+}else{
+    totalPrice = originalPrice;
+}
